@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 856px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main, header, article, aside, nav, footer, section {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+article {
+    background-color: lightblue;
+    width: 60%;
+    flex: 0 0 calc(60% - 20px);
+}
+
+aside {
+    background-color: lightgreen;
+    width: 20%;
+    flex: 0 0 20%;
+}
+
+nav {
+    background-color: lightcoral;
+    width: 20%;
+    flex: 0 0 20%;
+}
+
+footer {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+/* Dobozok elrendezések */
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    flex: 0 0 20%;
+}
+
+section:nth-child(2) {
+    order: -1;
+}
+
+section:nth-child(3) {
+    order: -1;
+}
